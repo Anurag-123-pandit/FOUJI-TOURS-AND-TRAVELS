@@ -1,95 +1,784 @@
+
+FileHelper.com
+View As...
+Close
+
+index.html
+Drag and drop or upload a file.
+Hypertext Markup Language File Icon
+index.html
+11 KB
+File Properties
+Name:
+index.html
+MIME type:
+text/html
+Size:
+11 KB
+Modified:
+Jan 1, 1601, 5:53 AM
+Show all properties
+File Type
+Hypertext Markup Language File
+An HTML file contains Hypertext Markup Language (HTML) that formats the structure of a webpage. It is stored in a standard text format and contains tags that define the page layout and content of the webpage, including the text, tables, images, and hyperlinks displayed on the webpage. HTML files are widely used online and displayed in web browsers.
+
+View more at FileInfo.com
+© Sharpened
+   |   
+Privacy Policy
+     
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOUJI TRAVEL BOOKING SERVICE PROVIDER</title>
-    <style>
-        h1{background-color:rgb(203, 18, 18);color: yellow;font-size: 80px;margin-top: 0px;: 200px;}
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-            background-color: blue;
-            margin-top: 0px;
-        }
 
-       
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        .dropdown .dropbtn {
-            background-color: #333;
-            color: white;
-            padding: 14px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            
-        }
-        .dropdown:hover .dropdown-content {
-            display: inline;color:green; background-color:pink;
-        }
-       H2{color:rgb(212,200,1);color: rgb(13, 59, 209);font-size: 40px;}
-       pre{color:rgb(26,250,0);font-size:20px; background-color: orange;}
-        body{background-image: url('file:///C:/Users/SCI/Desktop/BACKGROUNDistockphoto-458635353-612file:///C:/Users/SCI/Desktop/Suzuki-Ertiga-Cruise-1-1068x610.jpg.webpx612.jpg');height: 100%;}
-        H8{font-size: 30px;color: white;background-color: blue;}
-        p{background-color: aqua;margin-top: -60px;}
-        h12{color:rgb(51, 47, 55);background-color:  rgb(235, 21, 146);font-size: 30px;height: 10px;margin-bottom: -120px;}
-        h6{background-color: white;font-size: 30px;}
-        h15{color: crimson;background-color: blueviolet;font-size: 30px;}
-        a{display:block;}
-        #footer{color: whitesmoke;background-color: chartreuse;}
-        #fouji{color: white;background-color: black;margin-top: 10PX;}
-    </style>
-</head>
+    <head>
 
-<body>
-<h1><center>FAUJI TOUR AND TRAVELS</center></h1>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Your Travel Agency</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+            /* style.css */
+
+/* style.css */
+
+.marquee-container {
+
+    background-color: #f0f0f0;
+
+    overflow: hidden;
+
+    padding: 10px 0;
+
+    color: #333;
+
+    font-size: 14px;
+
+}
 
 
-<p>
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="file:///C:/Users/SCI/Desktop/New%20folder%20(2)/service.html">Services</a>
-    <div class="dropdown">
-        <button class="dropbtn">More</button>
-        <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="file:///C:/Users/SCI/Desktop/New%20folder%20(2)/contact.html">Contact</a>
+
+marquee {
+
+    width: 100%;
+
+}
+
+body {
+
+    font-family: sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    line-height: 1.6;
+
+    background-color:rgb(166, 192, 161);
+
+}
+
+
+
+.container {
+
+    width: 80%;
+
+    margin: auto;
+
+    overflow: hidden;
+
+}
+
+
+
+header {
+
+    background: green;
+
+    color: #fff;
+
+    padding: 20px 0;
+
+}
+
+
+
+header .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.logo h1 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+}
+
+
+
+.navbar .nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.navbar .nav-links li {
+
+    margin-left: 20px;
+
+}
+
+
+
+.navbar .nav-links li a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+navbar .nav-links li a:hover {
+
+    color: #bbb;
+
+}
+
+
+
+.hamburger {
+
+    display: none;
+
+    cursor: pointer;
+
+}
+
+
+
+.hamburger i {
+
+    font-size: 24px;
+
+}
+
+
+
+/* Responsive Navbar */
+
+@media (max-width: 768px) {
+
+    .navbar .nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        background: #333;
+
+        position: absolute;
+
+        top: 80px;
+
+        left: 0;
+
+        text-align: center;
+
+        z-index: 10;
+
+    }
+
+
+
+    .navbar .nav-links li {
+
+        margin: 0;
+
+        padding: 15px 0;
+
+        border-bottom: 1px solid #555;
+
+    }
+
+
+
+    .hamburger {
+
+        display: block;
+
+    }
+
+
+
+    .navbar.nav-active .nav-links {
+
+        display: flex;
+
+    }
+
+}
+
+.contact .map {
+
+    margin-top: 20px;
+
+    margin-left: 0%;
+
+}
+
+
+
+/* Rest of your CSS (about, services, contact) */
+
+.about, .services, .contact {
+
+    padding: 40px 0;
+
+    text-align: center;
+
+}
+
+
+
+.service-item {
+
+    background: #fff;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.service-item:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+.contact form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 400px;
+
+    margin: 20px auto;
+
+}
+
+
+
+.contact input, .contact button, .contact textarea {
+
+    padding: 10px;
+
+    margin: 5px 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+}
+
+
+
+.contact button {
+
+    background: #333;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+
+}
+
+
+
+.contact button:hover {
+
+    background: #555;
+
+}
+
+
+
+.call-icon {
+
+    display: inline-block;
+
+    background: #25D366; /* WhatsApp Green */
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    margin-top: 20px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.call-icon:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
+footer {
+
+    background: #333;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    gap: 10px;
+
+}
+
+footer a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: larger;
+
+}
+
+
+
+/* Animations */
+
+.about h2, .services h2, .contact h2 {
+
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* Responsive Design */
+
+@media(max-width: 768px) {
+
+    .container {
+
+        width: 90%;
+
+    }
+
+
+
+    header nav {
+
+        float: none;
+
+        text-align: center;
+
+    }
+
+
+
+    header nav a {
+
+        display: block;
+
+        padding: 10px 0;
+
+    }
+
+}
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+
+        <header>
+
+            <div class="container">
+
+                <div class="logo">
+
+                    <h1>Fouji Tour&Travel Agency</h1>
+
+                </div>
+
+                <nav class="navbar">
+
+                    <ul class="nav-links">
+
+                        <li><a href="#about">About</a></li>
+
+                        <li><a href="#services">Services</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+
+
+                    </ul>
+
+                    <div class="hamburger">
+
+                        <i class="fas fa-bars"></i>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <div class="marquee-container">
+
+            <marquee behavior="scroll" direction="left" scrollamount="8">
+
+                Special Offers! Book your dream vacation today! | 24/7 Customer
+
+                Support | Explore the world with us! | Best deals on car
+
+                rentals! | Contact us for personalized travel plans!
+
+            </marquee>
+
         </div>
-    </div><a href="hdd">Enquary</a>
-</div></p>
-</br></br>
-<marquee><h12>BEST TRAVEL BOOKING SERVICES PROVIDER AT LUCKNOW IN UTTAR PRADESH CONTACT NO.-9015405422,9501171535||एक बार सेवा का अवसर जरूर प्रदान करें ➡️फौजी टूर एंड ट्रैवल्स</h12></marquee>
-<H6><MARQUEE>BOOKING DETAILS
-    SHEDON 12RS/KM FOUR SEATER
-    SUV 15RS/KM SEVEN SEATER</MARQUEE></H6>
-<span id="block">
-    </br></br></br></br></br></br></br></br></br></br> </br></br></br></br></br></br></br></br></br></br>
-    <div id="footer"><h2> About Us </h2>
-    <H8><b>Our travel website gives you online Booking service for Travels, urgent booking,instant booking and more facilities based on our performance you can contact us and visit our store through the help of map.our experience in tour and travels since 2010 in this field.
-          </b></H8>
-   <h15> <br><br><center>❤️❤️THANKS FOR VISITING OUR SERVICES❤️❤️</center></h15></div>
-<div id="foiuji"><B>Copyright © 2010 FOUJI TOUR AND TRAVELS. All Rights Reserved Developed by</B></div>
 
 
 
-</span>
-</body>
-</html>
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <h2>About Us</h2>
+
+                <p>Welcome to Your Travel Agency, your trusted partner for
+
+                    unforgettable travel experiences. We specialize in crafting
+
+                    personalized journeys that cater to your unique preferences
+
+                    and desires. With years of experience in the travel
+
+                    industry, our team of passionate experts is dedicated to
+
+                    providing exceptional service and creating seamless travel
+
+                    plans. We believe that travel is more than just visiting new
+
+                    places; it's about immersing yourself in different cultures,
+
+                    creating lasting memories, and discovering the world's
+
+                    hidden gems. From luxurious getaways to adventurous
+
+                    expeditions, we handle every detail with meticulous care,
+
+                    ensuring your trip is nothing short of extraordinary. Our
+
+                    commitment to excellence, combined with our extensive
+
+                    network of partners, allows us to offer exclusive deals and
+
+                    unparalleled access to the most sought-after destinations.
+
+                    We are more than just a travel agency; we are your gateway
+
+                    to the world. We understand that every traveler is unique,
+
+                    and we take the time to listen to your needs and
+
+                    preferences, crafting tailor-made itineraries that exceed
+
+                    your expectations. We also offer 24/7 customer support,
+
+                    ensuring peace of mind throughout your journey. Our mission
+
+                    is to inspire and facilitate meaningful travel experiences
+
+                    that enrich your life and broaden your horizons. We are
+
+                    committed to sustainable tourism practices and strive to
+
+                    minimize our environmental impact while contributing to the
+
+                    local communities we visit. Let us take you on a journey of
+
+                    discovery, where every moment is filled with wonder and
+
+                    excitement. Your adventure begins with us.</p>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="services" class="services">
+
+            <div class="container">
+
+                <h2>Our Services</h2>
+
+                <div class="service-item">
+
+                    <h3>Car Services</h3>
+
+                    <p>We provide reliable car services for your travel needs.
+
+                        Our rates are competitive and transparent.</p>
+
+                    <ul>
+
+                        <li>Sedan: ₹10/km</li>
+
+                        <li>SUV: ₹15/km</li>
+
+                        <li>Luxury: ₹25/km</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="contact" class="contact">
+
+            <div class="container">
+
+                <h2>Contact Us</h2>
+
+                <form id="contactForm">
+
+                    <input type="text" id="name" placeholder="Name" required>
+
+                    <input type="tel" id="phone" placeholder="Phone" required>
+
+                    <input type="email" id="email" placeholder="Email"
+
+                        required>
+
+                    <textarea name="query" id="query"
+
+                        placeholder="Enter tour enquiry"></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+                <a href="tel:+911234567890" class="call-icon">📞 </a>
+
+            </div>
+
+            <div class="map">
+
+                <div
+
+                    style="overflow:hidden;resize:none;max-width:100%;width:100%;height:500px;"><div
+
+                        id="google-maps-display"
+
+                        style="height:100%; width:100%;max-width:100%;"><iframe
+
+                            style="height:100%;width:100%;border:0;"
+
+                            frameborder="0"
+
+                            src="https://www.google.com/maps/embed/v1/place?q=sgpgi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a
+
+                        class="google-map-html" rel="nofollow"
+
+                        href="https://www.bootstrapskins.com/themes"
+
+                        id="grab-maps-authorization"></div>
+
+                </div>
+
+            </section>
+
+
+
+            <footer>
+
+                <p>&copy; 2024 Your Travel Agency</p>
+
+                <a href="tel:+911234567890" class="call-icon">📞 </a>
+
+            </footer>
+
+            <script type="text/javascript"
+
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+
+    (function() {
+
+        emailjs.init("agq7NHPggd4iD2H80"); 
+
+    })();
+
+    document
+
+  .getElementById("contactForm")
+
+  .addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+
+
+    const name = document.getElementById("name").value;
+
+    const email = document.getElementById("email").value;
+
+    const phone = document.getElementById("phone").value;
+
+    const message = document.getElementById("query").value;
+
+    emailjs
+
+      .send("service_ax1lyde", "template_19ger7i", {
+
+        name: name,
+
+        // reply_to: email,
+
+        query: message,
+
+        phone: phone,
+
+      })
+
+      .then(
+
+        function (response) {
+
+          console.log("SUCCESS!", response.status, response.text);
+
+          alert("Email sent successfully!");
+
+          document.getElementById("contact-form").reset();
+
+        },
+
+        function (error) {
+
+          console.log("FAILED...", error);
+
+          alert("Email sending failed!");
+
+        }
+
+      );
+
+    });
+
+
+
+</script>
+
+
+
+            <script src="script.js"></script>
+
+        </body>
+
+    </html>
